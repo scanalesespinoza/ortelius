@@ -1,0 +1,6 @@
+FROM quay.io/openmake/meister:v7_5_1 AS builder
+
+WORKDIR /build/
+
+COPY . /workspace
+RUN /workspace/tgt/build.sh
